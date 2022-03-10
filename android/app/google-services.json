@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "316715827976",
+    "firebase_url": "https://tubewell1-a9fb4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tubewell1-a9fb4",
+    "storage_bucket": "tubewell1-a9fb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316715827976:android:ecdbeca3e3339fffd1e2bd",
+        "android_client_info": {
+          "package_name": "com.example.tubewell_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316715827976-hacl2h2lemvduf2h66g6mc83s32f3eic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjw0c45832AtVFPE5pL8NFdEPNC-qYiE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316715827976-hacl2h2lemvduf2h66g6mc83s32f3eic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
