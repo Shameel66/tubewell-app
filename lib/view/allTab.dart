@@ -138,30 +138,10 @@ class _AllState extends State<All> {
           _status[i] = onFlag;
           _lowVoltage[i] = lvFlag;
           _phaseError[i] = peError;
-          if (_status[i] == 0) {
-            totalOff = totalOff + 1;
-            print("Total $totalOff");
-          }
-          if (_status[i] == 1) {
-            totalOn = totalOn + 1;
-          }
-          if (_phaseError[i] == 1) {
-            totalError = totalError + 1;
-          }
-          if (_lowVoltage[i] == 1) {
-            totalPower = totalPower + 1;
-          }
         });
       });
     }
-    totalStatus.totalPower = totalPower;
-    totalStatus.totalOn = totalOn;
-    totalStatus.totalOff = totalOff;
-    totalStatus.totalError = totalError;
-    print(totalError);
-    print(totalPower);
-    print(totalOn);
-    print(totalOff);
+
   }
 
   @override
@@ -208,8 +188,8 @@ class _AllState extends State<All> {
                             decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: _phaseError[index] == 1
-                                    ? Colors.green
-                                    : Colors.red),
+                                    ? Colors.yellow
+                                    : Colors.grey),
                           )
                         ],
                       ),
@@ -231,8 +211,8 @@ class _AllState extends State<All> {
                             decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: _lowVoltage[index] == 1
-                                    ? Colors.green
-                                    : Colors.red),
+                                    ? Colors.orange
+                                    : Colors.grey),
                           )
                         ],
                       ),
@@ -240,7 +220,7 @@ class _AllState extends State<All> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Status",
+                            "ON/OFF",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),

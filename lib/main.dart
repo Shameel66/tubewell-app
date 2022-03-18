@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:tubewell_app/theme/theme.dart';
+import 'package:tubewell_app/view/splasgScreen.dart';
 
 
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeClass.lightTheme,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: BottomBar(),
+      home: SplashScreen(),
     );
   }
 }
